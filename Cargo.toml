@@ -1,0 +1,12 @@
+[package]
+name = "gomoku_ggez"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ggez = "0.9.3"               # 检查与 Rust 1.81.0 的兼容性，0.9.x 通常问题不大
+rand = "0.8.5"
+lazy_static = "1.5.0"        # 用于线程安全的全局变量（例如评估表）
+crossbeam-channel = "0.5.13" # 用于线程间通信
